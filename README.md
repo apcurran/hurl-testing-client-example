@@ -1,6 +1,6 @@
 # Hurl CLI Client for Testing APIs Demo
 
-Basic Usage:
+## Basic API Exploration Usage:
 ```sh
 hurl <filename>.hurl
 ```
@@ -18,4 +18,9 @@ hurl --verbose <filename>.hurl
 Pass in a secrets file like `.env` for using within `hurl` files
 ```sh
 hurl --variables-file .env <filename>.hurl
+```
+
+## Test Mode
+```sh
+hurl --test <filename>.hurl
 ```
