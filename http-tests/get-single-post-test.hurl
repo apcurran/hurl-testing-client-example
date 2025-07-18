@@ -1,3 +1,3 @@
 # check that the server is up
 GET {{BASE_URL}}/posts/1
-HTTP 500 # this is the test assertion for a 200 OK status
+HTTP 200 # this is the test assertion for a 200 OK status
