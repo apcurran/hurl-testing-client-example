@@ -1,4 +1,5 @@
 # Hurl CLI Client for Testing APIs Demo
+## with Github Actions for CI
 
 ## Basic API Exploration Usage:
 ```sh
