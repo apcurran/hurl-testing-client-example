@@ -23,4 +23,7 @@ jobs:
             
             - name: Run API integration tests
               run: |
-                hurl --test --variables-file .env http-tests/*.hurl
+                hurl --test --variable BASE_URL="${{ secrets.HURL_BASE_URL }}" http-tests/*.hurl
+              env:
+                # for clarity
+                HURL_BASE_URL: ${{ secrets.HURL_BASE_URL }}
